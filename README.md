@@ -1,17 +1,17 @@
 # vue-hello
 
 
-## Build Status
+### Build Status
 
 [![Build status](https://ci.appveyor.com/api/projects/status/8u1r849i11m1d4f4?svg=true)](https://ci.appveyor.com/project/OlegBirykov/vue-hello)
 
 
-## GitHub Pages
+### GitHub Pages
 
 https://olegbirykov.github.io/vue-hello/
 
 
-## Project setup
+### Project setup
 ```
 npm install
 ```

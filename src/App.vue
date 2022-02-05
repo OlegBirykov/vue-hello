@@ -34,7 +34,7 @@
                     }
                 },
                 doneUndoneItem: (idx, donex) => {
-                    const el = this.toDoses.findIndex((el) => el.id === idx);
+ //                   const el = this.toDoses.findIndex((el) => el.id === idx);
 
                     this.toDoses = this.toDoses.map(({id, name, done}) => {
                         if (idx === id) {
@@ -57,7 +57,7 @@
             }
         },
         watch: {
-            toDoses: (val, oldVal) => {
+            toDoses: function (val, oldVal) {
                 console.log(val, oldVal);
                 window.localStorage.setItem('localToDoses', JSON.stringify(val))
             }

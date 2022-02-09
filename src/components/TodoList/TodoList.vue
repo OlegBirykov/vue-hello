@@ -13,26 +13,29 @@
 <style lang="scss" src="./TodoList.scss"></style>
 
 <script>
-    import TodoListItem from './TodoListItem/TodoListItem.vue';
+  import TodoListItem from './TodoListItem/TodoListItem.vue';
 
-    export default {
-        name: 'TodoList',
-        props: {
-            TodoListItems: Array,
-            DoneUndone: Function,
-            DeleteItem: Function
-        },
-        data() {
-            return {
-                listItems: this.TodoListItems,
-                DoneUndone_: this.DoneUndone
-            }
+  export default {
+    name: 'TodoList',
 
-        },
-        created() {
-        },
-        components: {
-            TodoListItem
-        }
+    props: {
+      TodoListItems: Array,
+      DoneUndone: Function,
+      DeleteItem: Function
+    },
+
+    data() {
+      return {
+        listItems: this.TodoListItems,
+        DoneUndone_: this.DoneUndone
+      }
+    },
+
+    created() {
+    },
+
+    components: {
+      TodoListItem
     }
+  }
 </script>
